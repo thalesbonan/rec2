@@ -1,3 +1,28 @@
+html{
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(182, 159, 97), rgb(128, 89, 24));
+}
+
+body    {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#middle{
+    display: inline-table;
+    text-align: center;
+    position: relative;
+    transform: translateY(-1.7vw);
+}
+
+#header:hover {
+    position: relative;
+}
+
 #title{
     position: relative;
     font-family: "Norse";
@@ -10,4 +35,14 @@
     bottom: 2vw;
     opacity: 0;
     animation: intro 2s forwards;
+}
+
+#underline  {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    filter: invert(100%);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
 }
